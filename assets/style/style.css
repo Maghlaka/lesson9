@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(2, 2, 139);
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 100px 60px;
+    
+}
+.main div{
+    color: rgb(0, 0, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:100;
+    font-size: 40px;
+    background-color: white;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    grid-auto-rows: minmax(120px, auto);
+    grid-template-areas: 
+    "first1 first2 first3 first3"
+    "first1 second2 second2 second4"
+    "third1 third2 third3 second4"
+    "fourth1 fourth1 third3 fourth4"
+    "fifth1 fifth2 fifth2 fifht4";
+}
+.block1{
+    grid-area: first1;
+}
+
+.block3{
+    grid-area: first3;
+}
+.block4{
+    grid-area: second2;
+}
+.block5{
+    grid-area: second4;
+}
+.block8{
+    grid-area: third3;
+}
+.block9{
+    grid-area: fourth1;
+}
+.block12{
+    grid-area: fifth2;
+
+}
